@@ -1,11 +1,11 @@
 import React from 'react'
 import List from '../list/List'
-import "./NewList.css"
+import styles from "./NewList.module.css"
 
 
 const NewList = ({ list }) => {
   return (
-    <ul className='ul'>
+    <ul className={styles.ul}>
         {list.map((el) => {
         return( 
            <List

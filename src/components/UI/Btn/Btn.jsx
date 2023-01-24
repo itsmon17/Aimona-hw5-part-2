@@ -1,9 +1,9 @@
 import React from 'react'
-import "./Btn.css"
+import styles from "./Btn.module.css"
 
 const Btn = (props) => {
   return (
-    <button className='btn' onClick={props.onClick} disabled={props.disabled} >Add User</button>
+    <button className={styles.btn} onClick={props.onClick} disabled={props.disabled} >Add User</button>
   )
 }
 

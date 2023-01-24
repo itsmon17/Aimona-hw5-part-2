@@ -1,10 +1,10 @@
-import "./Input.css"
+import styles from "./Input.module.css"
 const Input = ({label,type, onChange}) => {
     return (
-      <div className="inputBlock">
-          <label className="label">{label}</label>
+      <div className={styles.inputBlock}>
+          <label className={styles.label}>{label}</label>
           <input 
-          className='inp'
+          className={styles.inp}
           type={type}
           onChange={onChange}/>
       </div>

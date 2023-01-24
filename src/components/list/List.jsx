@@ -1,9 +1,9 @@
-import "./List.css"
+import styles from "./List.module.css"
 
 const List = ({ nameInp, ageInp }) => {
   return (
-    <div className="listBlock">
-            <p className="title">{nameInp}({ageInp} years old)</p>
+    <div className={styles.listBlock}>
+            <p className={styles.title}>{nameInp}({ageInp} years old)</p>
     </div>
   )
 }

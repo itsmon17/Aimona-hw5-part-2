@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Input from '../UI/Input/Input'
 import Btn from '../UI/Btn/Btn'
-import "./FormInput.css"
+import styles from "./FormInput.module.css"
 
 
 const FormInput = (props) => {
@@ -29,7 +29,7 @@ const FormInput = (props) => {
     }
 
   return (
-    <div className='formBlock'>
+    <div className={styles.formBlock}>
     <Input type="text" label="Username" onChange={nameInputChangeHandler} value={nameInp}/>
     <Input type="number" label="Age(Year)" onChange={ageInputChangeHandler} value={ageInp}/>
     <Btn  onClick={addListHandler} disabled={!ageInp || !nameInp} />
